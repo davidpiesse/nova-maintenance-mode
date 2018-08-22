@@ -55,11 +55,10 @@ export default {
         ToggleButton
     },
     mounted() {
-        this.currentlyInMaintenance = Nova.config.currentlyInMaintenanceMode
     },
     data: function () {
         return {
-            currentlyInMaintenance: false,
+            currentlyInMaintenance: Nova.config.currentlyInMaintenanceMode,
             message: "",
             retry: 60,
             allow: "",
