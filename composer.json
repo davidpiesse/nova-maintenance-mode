@@ -1,0 +1,53 @@
+{
+    "name": "davidpiesse/nova-maintenance-mode",
+    "description": "Enable and disbale Maintenance Mode",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../laravel-nova"
+        }
+    ],
+    "homepage": "https://github.com/davidpiesse/nova-maintenance-mode",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Piesse",
+            "email": "piesse@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/nova": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.6",
+        "phpunit/phpunit": "7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Davidpiesse\\NovaMaintenanceMode\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Davidpiesse\\NovaMaintenanceMode\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Davidpiesse\\NovaMaintenanceMode\\ToolServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
